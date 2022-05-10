@@ -1,9 +1,13 @@
 #include <iostream>
 #include <string>
+#include <windows.h>
 using namespace std;
 
 int main()
 {
+    system("mode con:cols=120 lines=45");
+
+
     cout << "@@@     @@@   @    @  @  @@@@@     @@@  @@@@    @@@     @@@    @@@      @@@@@  @   @  @@@@     @       @  @    @  @@@@" << endl;
     cout << "@  @@  @   @  @@   @  @    @      @     @   @  @   @   @      @           @    @   @  @        @       @  @@   @  @    " << endl;
     cout << "@   @  @   @  @ @  @       @     @      @   @  @   @    @@@    @@@        @    @@@@@  @@@@     @       @  @ @  @  @@@@ " << endl;
@@ -11,8 +15,9 @@ int main()
     cout << "@  @@  @   @  @   @@       @      @     @   @  @   @       @      @       @    @   @  @        @       @  @   @@  @    " << endl;
     cout << "@@@     @@@   @    @       @       @@@  @   @   @@@     @@@    @@@        @    @   @  @@@@     @@@@@@  @  @    @  @@@@ " << endl;
 
+    cout << "\n\n \t\t\t\t\t\t\t START : SPACE \n";
+    cout << "\t\t\t\t\t\t Player1 : WASD  Player2 : ¡è¡ç¡é¡æ \n";
 
-    cout << endl;
     string** block = new string * [30];
     for (int i = 0; i < 30; ++i)
         block[i] = new string[60];
